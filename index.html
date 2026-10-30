@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#160e24">
+  <meta name="description" content="Conquer the Dungeon — um survival roguelike em pixel art com sete heróis, hordas e chefes colossais.">
+  <title>Conquer the Dungeon</title>
+  <link rel="icon" href="assets/icon.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="Conquer the Dungeon — início">
+      <img src="assets/icon.png" alt="" width="42" height="42">
+      <span>CTD.EXE</span>
+    </a>
+    <nav aria-label="Navegação principal">
+      <a href="#jogo">O JOGO</a>
+      <a href="#herois">HERÓIS</a>
+      <a href="#download">DOWNLOAD</a>
+    </nav>
+    <span class="status"><i></i> ALPHA ONLINE</span>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="inicio">
+      <img class="hero-art" src="assets/tower-city.png" alt="Um guerreiro encara uma torre colossal iluminada por um portal roxo, em uma cidade desértica ao entardecer.">
+      <div class="hero-vignette" aria-hidden="true"></div>
+      <div class="hero-content">
+        <p class="eyebrow">// TORRE DO INFINITO DETECTADA</p>
+        <h1><span>CONQUER</span><br>THE DUNGEON</h1>
+        <p class="lead">A torre surgiu no coração da cidade.<br>Entre, evolua e veja até onde você chega.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="https://github.com/lipecosta00/conquer-the-dungeon-releases/releases/latest" target="_blank" rel="noopener">
+            <span aria-hidden="true">▾</span> BAIXAR PARA WINDOWS
+          </a>
+          <a class="button button-ghost" href="#jogo">VER O JOGO</a>
+        </div>
+        <p class="microcopy">GRÁTIS · WINDOWS · CONTROLE OU TECLADO · CO-OP ONLINE (ALPHA)</p>
+      </div>
+      <div class="scroll-cue" aria-hidden="true">SCROLL <span>↓</span></div>
+    </section>
+
+    <div class="ticker" aria-label="Destaques do jogo">
+      <div>7 HERÓIS <b>✦</b> HORDAS SEM FIM <b>✦</b> BUILDS DIFERENTES A CADA PARTIDA <b>✦</b> CO-OP ONLINE <b>✦</b> CHEFES COLOSSAIS <b>✦</b></div>
+    </div>
+
+    <section class="game-section frame" id="jogo">
+      <div class="section-copy">
+        <p class="eyebrow">ARQUIVO 01 // MISSÃO</p>
+        <h2>SOBREVIVA.<br><em>EVOLUA.</em><br>CONQUISTE.</h2>
+        <p>Monstros cercam você por todos os lados. Ataque automaticamente, recolha cristais e escolha novos poderes antes que o tempo acabe.</p>
+        <p>Aos 45 segundos, o chão treme. O Golem do Eclipse chegou — e só uma build bem montada abre o próximo andar.</p>
+        <ul class="stat-grid" aria-label="Características principais">
+          <li><strong>07</strong><span>HERÓIS</span></li>
+          <li><strong>12+</strong><span>EVOLUÇÕES</span></li>
+          <li><strong>∞</strong><span>REPLAY</span></li>
+        </ul>
+      </div>
+      <div class="game-card">
+        <div class="window-bar"><span>GAMEPLAY_PREVIEW.BMP</span><span>— □ ×</span></div>
+        <div class="game-screen">
+          <img src="assets/tower-city.png" alt="Cena em pixel art da cidade e da Torre do Infinito.">
+          <div class="fake-hud"><span>♥ ♥ ♥</span><span>00:45</span><span>LV. 08</span></div>
+          <div class="boss-warning">⚠ GOLEM DO ECLIPSE ⚠</div>
+        </div>
+        <div class="card-caption"><span>CAPTURA DE DESENVOLVIMENTO</span><span>BUILD 2.0.0-a17</span></div>
+      </div>
+    </section>
+
+    <section class="heroes-section" id="herois">
+      <img class="hero-portrait" id="selected-portrait" src="assets/hero-art/warrior.webp" alt="Ilustração do Guerreiro" decoding="async">
+      <div class="heroes-content">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">ARQUIVO 02 // PERSONAGENS</p>
+            <h2>ESCOLHA SEU <em>HERÓI</em></h2>
+          </div>
+          <p>Sete estilos de combate. Nenhuma escolha segura.</p>
+        </div>
+
+        <div class="hero-picker" role="list" aria-label="Heróis jogáveis">
+          <button class="hero-chip active" data-hero="Guerreiro" data-role="Espada ampla · dano alto · ritmo pesado" data-art="assets/hero-art/warrior.webp" aria-pressed="true"><img src="assets/heroes/warrior.png" alt=""><span>GUERREIRO</span></button>
+          <button class="hero-chip" data-hero="Mago" data-role="Magia à distância · descargas elétricas" data-art="assets/hero-art/mage.webp" aria-pressed="false"><img src="assets/heroes/mage.png" alt=""><span>MAGO</span></button>
+          <button class="hero-chip" data-hero="Ladino" data-role="Adagas rápidas · maior chance de esquiva" data-art="assets/hero-art/rogue.webp" aria-pressed="false"><img src="assets/heroes/rogue.png" alt=""><span>LADINO</span></button>
+          <button class="hero-chip" data-hero="Arqueiro" data-role="Longo alcance · disparos múltiplos" data-art="assets/hero-art/archer.webp" aria-pressed="false"><img src="assets/heroes/archer.png" alt=""><span>ARQUEIRO</span></button>
+          <button class="hero-chip" data-hero="Bárbaro" data-role="Machado brutal · mais forte quando ferido" data-art="assets/hero-art/barbarian.webp" aria-pressed="false"><img src="assets/heroes/barbarian.png" alt=""><span>BÁRBARO</span></button>
+          <button class="hero-chip" data-hero="Curandeira" data-role="Luz instantânea · cura por abates" data-art="assets/hero-art/healer.webp" aria-pressed="false"><img src="assets/heroes/healer.png" alt=""><span>CURANDEIRA</span></button>
+          <button class="hero-chip" data-hero="Necromante" data-role="Caveiras flamejantes · revive inimigos" data-art="assets/hero-art/necromancer.webp" aria-pressed="false"><img src="assets/heroes/necromancer.png" alt=""><span>NECROMANTE</span></button>
+        </div>
+
+        <div class="selected-hero" aria-live="polite">
+          <span class="prompt">C:\HERÓIS&gt;</span>
+          <strong id="selected-name">GUERREIRO</strong>
+          <span id="selected-role">Espada ampla · dano alto · ritmo pesado</span>
+          <i class="cursor" aria-hidden="true"></i>
+        </div>
+      </div>
+    </section>
+
+    <section class="download-section" id="download">
+      <div class="download-panel">
+        <img src="assets/icon.png" alt="Emblema da Torre do Infinito com espada e cajado cruzados." width="180" height="180">
+        <div>
+          <p class="eyebrow">BUILD ATUAL // 2.0.0-ALPHA17</p>
+          <h2>A TORRE ESTÁ<br><em>ESPERANDO.</em></h2>
+          <p>Baixe o pacote portátil, extraia e execute. Sem instalador, sem cadastro e sem enrolação.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="https://github.com/lipecosta00/conquer-the-dungeon-releases/releases/latest" target="_blank" rel="noopener">▾ BAIXAR BUILD</a>
+            <span class="itch-soon">ITCH.IO — EM BREVE</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© 2026 CONQUER THE DUNGEON</span>
+    <span>FEITO COM LÖVE <b>♥</b> E CAFÉ</span>
+    <a href="https://github.com/lipecosta00/conquer-the-dungeon-releases" target="_blank" rel="noopener">RELEASES ↗</a>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
